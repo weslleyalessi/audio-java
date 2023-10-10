@@ -1,13 +1,9 @@
-const listaDeTeclas = document.querySelectorAll('.tecla');
 
 function tocaSomPom(){
     document.querySelector('#som_tecla_pom').play();
 }
-    document.querySelectorAll('.tecla')
 
-    /*const listaDeTeclas = document.querySelectorAll('.tecla')*/
-
-    function tocaSomClap(){
+function tocaSomClap(){
     document.querySelector('#som_tecla_clap').play();
     }
     document.querySelector('.tecla_clap').onclick = tocaSomClap;
@@ -17,3 +13,5 @@ function tocaSomTim(){
     }
     document.querySelector('.tecla_tim').onclick = tocaSomTim;
 
+    const listaDeTeclas = document.querySelectorAll('.tecla');
+    listaDeTeclas [0].onclick = tocaSomPom;
