@@ -13,7 +13,7 @@ listaDeTeclas [0].onclick = tocaSom;
 let contador = 0; 
 
 //estrutura de repetição while = enquanto
-while(contador <9){
+while(contador < listaDeTeclas.length){
     const efeito = listaDeTeclas[contador].classList[1];
     const IDaudio = "#som_"+efeito;
     listaDeTeclas[contador].onclick = function(){
