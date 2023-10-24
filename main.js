@@ -1,10 +1,7 @@
 //criando/declarando a função tocaSom
 function tocaSom(IDaudio){
     document.querySelector(IDaudio).play();
-    }
-    //chamando/invocando a função TocaSomPom pelo clique do botão pom
-    /*document.querySelector('.tecla_pom').onclick = tocaSomPom;*/
-
+}
 
 //criando referência constante ListaDeTeclas buscando todos
 const listaDeTeclas = document.querySelectorAll('.tecla');
