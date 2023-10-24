@@ -3,7 +3,7 @@ function tocaSom(IDaudio){
     document.querySelector(IDaudio).play();
     }
     //chamando/invocando a função TocaSomPom pelo clique do botão pom
-    document.querySelector('.tecla_pom').onclick = IDaudio;
+    /*document.querySelector('.tecla_pom').onclick = tocaSomPom;*/
 
 
 //criando referência constante ListaDeTeclas buscando todos
@@ -23,3 +23,6 @@ while(contador <9){
     console.log(contador);
 }
 
+function tocaSom(IDaudio){
+    
+}
