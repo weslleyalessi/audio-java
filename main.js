@@ -1,6 +1,13 @@
 //criando/declarando a função tocaSom
 function tocaSom(IDaudio){
-    document.querySelector(IDaudio).play();
+    //if else elemento comparadores comparação
+    const elemento = document.querySelector(IDaudio);
+        if (elemento && elemento.localName === 'audio'){
+            elemento.play();
+ 
+        }else{
+                console.log("Elemento não encontrado")
+   }
 }
 
 //criando referência constante ListaDeTeclas buscando todos
@@ -17,7 +24,7 @@ for(let contador = 0; contador < listaDeTeclas.length; contador++){
     }
 
     tecla.onkeydown = function(evento){
-        if(evento.code != 'Tab'){
+        if(evento.code === "Space" || evento.code === "enter"){
         tecla.classList.add('.ativa');
         }
     }
